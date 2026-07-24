@@ -1,0 +1,4 @@
+policy,successes_out_of_20,success_rate,mean_cumulative_reward,mean_episode_length,mean_final_absolute_error,hold_action_fraction,mean_action_changes
+config_a,20,1.0,13.149700552898867,20.75,0.007093466042858737,0.46987951807228917,6.75
+config_b,20,1.0,13.087999390441386,19.75,0.013579037579679654,0.11392405063291139,6.25
+rule_based,20,1.0,12.866629067342728,24.0,0.012209044417276146,0.6875,1.0

@@ -1,0 +1,117 @@
+{
+  "selected_configuration": "config_a",
+  "selected_source_checkpoint": "models/config_a_final.pt",
+  "selected_checkpoint": "models/selected_dqn.pt",
+  "selection_method": "Lexicographic evidence: success rate, mean reward, lower final error, fewer action changes, then shorter episodes.",
+  "required_threshold": 0.8,
+  "selected_meets_threshold": true,
+  "summaries": {
+    "config_a": {
+      "episodes": 20,
+      "successes": 20,
+      "success_rate": 1.0,
+      "mean_cumulative_reward": 13.149700552898867,
+      "mean_episode_length": 20.75,
+      "mean_final_absolute_error": 0.007093466042858737,
+      "hold_action_fraction": 0.46987951807228917,
+      "mean_action_changes": 6.75,
+      "configuration": "config_a",
+      "checkpoint": "models/config_a_final.pt",
+      "evaluation_epsilon": 0.0,
+      "seed_policy": "Fixed benchmark seeds 18020-18324; identical for every policy.",
+      "checkpoint_training_metadata": {
+        "configuration": "config_a",
+        "description": "Baseline - longer exploration period",
+        "seed": 8020,
+        "device": "cpu",
+        "requested_episodes": 600,
+        "completed_episodes": 600,
+        "stopped_reason": "episode_limit",
+        "wall_clock_seconds": 53.69915859799994,
+        "wall_clock_minutes": 0.8949859766333323,
+        "final_epsilon": 0.05,
+        "mean_reward_final_20": 15.55656120796848,
+        "training_success_rate_final_50": 1.0,
+        "total_optimization_steps": 17512,
+        "hyperparameters": {
+          "gamma": 0.95,
+          "learning_rate": 0.001,
+          "batch_size": 64,
+          "replay_capacity": 50000,
+          "epsilon_start": 1.0,
+          "epsilon_min": 0.05,
+          "epsilon_decay": 0.995,
+          "target_update_steps": 250,
+          "warmup_transitions": 500,
+          "gradient_clip_norm": 10.0,
+          "hidden_size": 64
+        },
+        "goal_range": [
+          -0.8,
+          0.8
+        ],
+        "truncation_treatment": "Episodes stop on truncation, but Bellman targets bootstrap from truncated states; only true terminated states are masked."
+      }
+    },
+    "config_b": {
+      "episodes": 20,
+      "successes": 20,
+      "success_rate": 1.0,
+      "mean_cumulative_reward": 13.087999390441386,
+      "mean_episode_length": 19.75,
+      "mean_final_absolute_error": 0.013579037579679654,
+      "hold_action_fraction": 0.11392405063291139,
+      "mean_action_changes": 6.25,
+      "configuration": "config_b",
+      "checkpoint": "models/config_b_final.pt",
+      "evaluation_epsilon": 0.0,
+      "seed_policy": "Fixed benchmark seeds 18020-18324; identical for every policy.",
+      "checkpoint_training_metadata": {
+        "configuration": "config_b",
+        "description": "Faster transition toward exploitation",
+        "seed": 8020,
+        "device": "cpu",
+        "requested_episodes": 600,
+        "completed_episodes": 600,
+        "stopped_reason": "episode_limit",
+        "wall_clock_seconds": 40.003118189999896,
+        "wall_clock_minutes": 0.6667186364999983,
+        "final_epsilon": 0.05,
+        "mean_reward_final_20": 15.367679549654714,
+        "training_success_rate_final_50": 1.0,
+        "total_optimization_steps": 12955,
+        "hyperparameters": {
+          "gamma": 0.95,
+          "learning_rate": 0.001,
+          "batch_size": 64,
+          "replay_capacity": 50000,
+          "epsilon_start": 1.0,
+          "epsilon_min": 0.05,
+          "epsilon_decay": 0.985,
+          "target_update_steps": 250,
+          "warmup_transitions": 500,
+          "gradient_clip_norm": 10.0,
+          "hidden_size": 64
+        },
+        "goal_range": [
+          -0.8,
+          0.8
+        ],
+        "truncation_treatment": "Episodes stop on truncation, but Bellman targets bootstrap from truncated states; only true terminated states are masked."
+      }
+    },
+    "rule_based": {
+      "episodes": 20,
+      "successes": 20,
+      "success_rate": 1.0,
+      "mean_cumulative_reward": 12.866629067342728,
+      "mean_episode_length": 24.0,
+      "mean_final_absolute_error": 0.012209044417276146,
+      "hold_action_fraction": 0.6875,
+      "mean_action_changes": 1.0,
+      "configuration": "rule_based",
+      "evaluation_epsilon": 0.0,
+      "sample_efficiency": "No learned samples; uses explicit task knowledge."
+    }
+  }
+}

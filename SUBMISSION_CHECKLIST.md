@@ -1,0 +1,28 @@
+# Assignment 3 Submission Checklist
+
+- [x] Environment checker passes.
+- [x] Rule-based baseline recorded: 20/20 successes.
+- [x] Student-written ReplayBuffer, QNetwork, agent, and optimization present.
+- [x] Configuration A (`0.995`) completed for 600 episodes.
+- [x] Configuration B (`0.985`) completed for 600 episodes.
+- [x] Complete measured training time is below five hours.
+- [x] CPU execution is supported and was validated.
+- [x] `models/selected_dqn.pt` loads without retraining.
+- [x] Evaluation uses epsilon `0.0`.
+- [x] Twenty benchmark episodes are reported per policy.
+- [x] Selected DQN achieved 20/20 successes (100%).
+- [x] Rule-based and DQN metrics use identical goals and seeds.
+- [x] All required plots are present.
+- [x] Technical report is included.
+- [x] Completed notebook is included.
+- [x] 2-minute 15-second saved-policy video is included.
+- [x] Interactive WSLg MuJoCo viewer script is included.
+- [x] README commands were tested in the validation environment.
+- [x] One-page Brightspace PDF is included.
+- [x] `.gitignore` excludes virtual environments and caches.
+- [ ] Create the public GitHub repository.
+- [ ] Push this package to `vir33mistry/CSCN8020_Assignment3`.
+- [ ] Confirm both GitHub URLs are publicly accessible.
+- [ ] Run the WSLg viewer and optionally record the graphical viewer window.
+- [ ] Re-run the notebook and evaluation on the student's computer.
+- [ ] Upload the PDF, links, and video to Brightspace.

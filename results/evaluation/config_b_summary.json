@@ -1,0 +1,47 @@
+{
+  "episodes": 20,
+  "successes": 20,
+  "success_rate": 1.0,
+  "mean_cumulative_reward": 13.087999390441386,
+  "mean_episode_length": 19.75,
+  "mean_final_absolute_error": 0.013579037579679654,
+  "hold_action_fraction": 0.11392405063291139,
+  "mean_action_changes": 6.25,
+  "configuration": "config_b",
+  "checkpoint": "models/config_b_final.pt",
+  "evaluation_epsilon": 0.0,
+  "seed_policy": "Fixed benchmark seeds 18020-18324; identical for every policy.",
+  "checkpoint_training_metadata": {
+    "configuration": "config_b",
+    "description": "Faster transition toward exploitation",
+    "seed": 8020,
+    "device": "cpu",
+    "requested_episodes": 600,
+    "completed_episodes": 600,
+    "stopped_reason": "episode_limit",
+    "wall_clock_seconds": 40.003118189999896,
+    "wall_clock_minutes": 0.6667186364999983,
+    "final_epsilon": 0.05,
+    "mean_reward_final_20": 15.367679549654714,
+    "training_success_rate_final_50": 1.0,
+    "total_optimization_steps": 12955,
+    "hyperparameters": {
+      "gamma": 0.95,
+      "learning_rate": 0.001,
+      "batch_size": 64,
+      "replay_capacity": 50000,
+      "epsilon_start": 1.0,
+      "epsilon_min": 0.05,
+      "epsilon_decay": 0.985,
+      "target_update_steps": 250,
+      "warmup_transitions": 500,
+      "gradient_clip_norm": 10.0,
+      "hidden_size": 64
+    },
+    "goal_range": [
+      -0.8,
+      0.8
+    ],
+    "truncation_treatment": "Episodes stop on truncation, but Bellman targets bootstrap from truncated states; only true terminated states are masked."
+  }
+}

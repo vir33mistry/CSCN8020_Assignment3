@@ -1,0 +1,13 @@
+{
+  "episodes": 20,
+  "successes": 20,
+  "success_rate": 1.0,
+  "mean_cumulative_reward": 12.866629067342728,
+  "mean_episode_length": 24.0,
+  "mean_final_absolute_error": 0.012209044417276146,
+  "hold_action_fraction": 0.6875,
+  "mean_action_changes": 1.0,
+  "configuration": "rule_based",
+  "evaluation_epsilon": 0.0,
+  "sample_efficiency": "No learned samples; uses explicit task knowledge."
+}
